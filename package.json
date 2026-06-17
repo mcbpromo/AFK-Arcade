@@ -1,0 +1,15 @@
+{
+  "name": "afk-arcade",
+  "version": "1.0.0",
+  "description": "TikTok live chat listener for AFK-Arcade games",
+  "type": "module",
+  "main": "src/listener.js",
+  "scripts": {
+    "start": "node src/listener.js",
+    "dev": "node --watch src/listener.js"
+  },
+  "dependencies": {
+    "tiktok-live-connector": "^2.1.1-beta1",
+    "dotenv": "^17.3.1"
+  }
+}
