@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --neon-pink: #ff2d95;
+  --neon-green: #39ff14;
+  --neon-cyan: #00fff7;
+  --neon-yellow: #fff01f;
+  --neon-purple: #bf5fff;
+  --dark-bg: #0d0f1a;
+  --dark-card: #141729;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+}
