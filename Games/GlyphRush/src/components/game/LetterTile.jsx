@@ -18,10 +18,10 @@ export default function LetterTile({ letter, size = 'normal' }) {
   const color = getTileColor(letter === 'Qu' ? 'Q' : letter);
   const pts = LETTER_POINTS[letter.toUpperCase()] || LETTER_POINTS['Q'];
 
-  const dim = size === 'mobile' ? '72px' : '90px';
-  const fontSize = size === 'mobile' ? '1.6rem' : '2rem';
-  const ptSize = size === 'mobile' ? '0.55rem' : '0.65rem';
-
+  const dim = size === 'mobile' ? '220px' : '90px';
+  const fontSize = size === 'mobile' ? '4rem' : '2rem';
+  const ptSize = size === 'mobile' ? '1.2rem' : '0.65rem';
+  
   return (
     <div style={{
       width: dim,

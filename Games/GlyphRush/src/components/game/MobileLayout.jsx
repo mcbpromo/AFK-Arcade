@@ -39,14 +39,14 @@ export default function MobileLayout() {
       </div>
 
       {/* Board */}
-      <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '40px 20px' }}>
         <GameBoard board={state.board} tileSize="mobile" />
       </div>
 
       <div style={{ height: '1px', backgroundColor: '#ff2d9522', margin: '0 40px' }} />
 
       {/* Word list */}
-      <div style={{ flex: 1, padding: '24px 32px', minHeight: 0, overflow: 'hidden' }}>
+      <div style={{ flex: 1, padding: '16px 24px', minHeight: 0, overflow: 'hidden' }}>
         <div style={{
           display: 'flex', justifyContent: 'space-between', alignItems: 'center',
           marginBottom: '16px',

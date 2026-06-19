@@ -2,18 +2,21 @@ import React from 'react';
 import LetterTile from './LetterTile';
 
 export default function GameBoard({ board, tileSize = 'normal' }) {
+  const tileSize_px = tileSize === 'mobile' ? '220px' : '90px';
+  const gap = tileSize === 'mobile' ? '16px' : '8px';
+
   if (!board || board.length === 0) {
     return (
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)',
-        gap: '8px',
+        gridTemplateColumns: `repeat(4, ${tileSize_px})`,
+        gap,
         padding: '16px',
       }}>
         {Array.from({ length: 16 }).map((_, i) => (
           <div key={i} style={{
-            width: tileSize === 'mobile' ? '72px' : '90px',
-            height: tileSize === 'mobile' ? '72px' : '90px',
+            width: tileSize_px,
+            height: tileSize_px,
             backgroundColor: '#141729',
             border: '2px solid #ffffff11',
             borderRadius: '10px',
@@ -26,8 +29,8 @@ export default function GameBoard({ board, tileSize = 'normal' }) {
   return (
     <div style={{
       display: 'grid',
-      gridTemplateColumns: 'repeat(4, 1fr)',
-      gap: '8px',
+      gridTemplateColumns: `repeat(4, ${tileSize_px})`,
+      gap,
       padding: '16px',
       backgroundColor: '#0d0f1a',
       borderRadius: '16px',
