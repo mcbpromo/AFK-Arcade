@@ -1,0 +1,1 @@
+cd ~/Documents/AFK-Arcade/Games/GlyphRush

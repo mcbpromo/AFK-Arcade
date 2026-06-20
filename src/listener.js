@@ -13,7 +13,7 @@ const wss = new WebSocketServer({ port: 8080 });
 console.log('🔌 WebSocket server on ws://localhost:8080');
 
 function broadcast(type, data) {
-  const msg = JSON.stringify({ type, ...data });
+  const msg = JSON.stringify({ type, data, timestamp: new Date().toISOString() });
   for (const client of wss.clients) {
     if (client.readyState === 1) client.send(msg);
   }
